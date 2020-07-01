@@ -1,0 +1,49 @@
+.our-customers-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+
+  color: #010101;
+  text-align: center;
+  .background-parallax {
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+    filter: opacity(10%);
+    object-fit: fill;
+    top: 0;
+    left: 0;
+  }
+  .background-grid {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  hr {
+    width: 5%;
+    margin: 0 auto;
+    border: none;
+    border-top: 10px dotted #ccc;
+  }
+  .title {
+    font-size: 40px;
+    margin: 2.5rem 0 4rem 0;
+  }
+  .company-logo {
+    width: 120px;
+    border-radius: 400px;
+
+    margin: 0 auto;
+  }
+
+  .details {
+    margin: 15px 10rem 6rem 10rem;
+    font-size: 19px;
+    color: rgb(50, 50, 50);
+    .review {
+      font-family: "DM Sans", sans-serif;
+      margin-top: 10px;
+      color: rgb(66, 66, 66);
+    }
+  }
+}
