@@ -47,3 +47,24 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .our-customers-container {
+    margin-bottom: 2rem;
+    .title {
+      font-size: 30px;
+      margin: 0 1rem 1.5rem 1rem;
+    }
+    .all-customers {
+      display: flex;
+      flex-direction: column;
+
+      .details {
+        margin: 0;
+        padding: 0 1rem;
+        .review {
+        }
+      }
+    }
+  }
+}

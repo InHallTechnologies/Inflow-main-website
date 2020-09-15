@@ -1,24 +1,48 @@
-import React from "react";
+import React, { createRef, useRef } from "react";
 import Header from "../../components/header/header.component";
 import Navigation from "../../components/navigation/navigation.components";
 import Services from "../../components/services/services.component";
 import OurCustomers from "../../components/our-customers/our-customers.components";
 import ContactUs from "../../components/contact-us/contact-us.components";
+import OurWork from "../../components/our-work-container/our-work.component";
 
 class HomePage extends React.Component {
   constructor() {
     super();
-    this.state = {};
+
+    const Header = createRef(null);
+    const Services = createRef(null);
+    const Customers = createRef(null);
+    const ContactUs = createRef(null);
+
+    this.state = {
+      contactUs: ContactUs,
+      services: Services,
+      header: Header,
+      customers: Customers,
+    };
   }
 
   render() {
     return (
       <div>
-        <Navigation />
-        <Header />
-        <Services />
-        <OurCustomers />
-        <ContactUs />
+        <Navigation
+          contactUs={this.state.contactUs}
+          header={this.state.header}
+          services={this.state.services}
+          customers={this.state.customers}
+        />
+        <Header
+          reference={this.state.header}
+          contactUs={this.state.contactUs}
+        />
+        <Services
+          reference={this.state.services}
+          contactUs={this.state.contactUs}
+        />
+        <OurWork />
+        {/* <OurCustomers reference={this.state.customers} /> */}
+        <ContactUs reference={this.state.contactUs} />
       </div>
     );
   }

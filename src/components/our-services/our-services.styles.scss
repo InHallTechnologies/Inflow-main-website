@@ -5,9 +5,20 @@
   align-items: center;
   margin: 1rem 2rem 1rem 2rem;
   cursor: pointer;
+  flex-direction: column;
+
   .image {
     transform: scaleX(-1);
-    width: 30%;
+    width: 400px;
+  }
+  .type-text {
+    font-size: 22px;
+    text-align: start;
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+    font-family: "DM Sans", sans-serif;
+    color: rgb(66, 66, 66);
   }
 
   .type {
@@ -16,26 +27,23 @@
     font-weight: 500;
     font-family: "DM Sans", sans-serif;
   }
-
-  .type-text {
-    text-align: center;
-    font-size: 22px;
-    text-align: start;
-    width: 50%;
-
-    margin: 1rem;
-    font-family: "DM Sans", sans-serif;
-    color: rgb(66, 66, 66);
-  }
 }
 
 @media (max-width: 1200px) {
   .our-service-container {
+    margin: 0;
     margin-top: 2rem;
     padding: 0;
+    flex-direction: column;
     cursor: pointer;
+
     .image {
       width: 80%;
+    }
+
+    .type-text {
+      width: 100%;
+      text-align: center;
     }
   }
 }

@@ -11,9 +11,6 @@ import anime from "animejs";
 import { withRouter } from "react-router-dom";
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     anime({
       targets: "#truck ",
@@ -63,12 +60,12 @@ class Header extends React.Component {
   }
 
   handleClick = (event) => {
-    this.props.history.push("fill-form");
+    this.props.contactUs.current.scrollIntoView();
   };
 
   render() {
     return (
-      <div className="header-container">
+      <div className="header-container" ref={this.props.reference}>
         <div className="header-content">
           <div className="header-title">
             <p className="simple title">Simple </p>
@@ -78,8 +75,8 @@ class Header extends React.Component {
             <p className="guranteed title">Guarenteed! </p>
           </div>
           <p className="header-content-text">
-            Labore irure adipisicing laborum deserunt ex nostrud excepteur ea ad
-            proident sint.
+            Inflow provides smart and efficient logistics solutions for all your
+            need.
           </p>
           <div className="header-button-container">
             <button

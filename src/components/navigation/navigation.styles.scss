@@ -9,16 +9,24 @@
     width: 200px;
   }
 
+  .ham-menu {
+    display: none;
+  }
+
   .nav-container {
-    width: 35%;
+    width: 20%;
     display: flex;
+    position: relative;
     justify-content: space-between;
+    .close-menu {
+      display: none;
+    }
 
     .nav-item {
       transition: all 1s ease;
       text-decoration: none;
       color: white;
-
+      cursor: pointer;
       font-weight: bold;
     }
 
@@ -33,11 +41,43 @@
 @media (max-width: 1200px) {
   .navigation-container {
     justify-content: center;
+    padding: 1rem;
+    .ham-menu {
+      width: 30px;
+      margin-left: auto;
+      filter: invert(100);
+      display: flex;
+    }
+
     .logo-image {
       width: 150px;
+      margin: 0 auto;
+      margin-left: 98px;
     }
     .nav-container {
       display: none;
+      position: absolute;
+      height: 100vh;
+      width: 60%;
+      background-color: white;
+      z-index: 10;
+      right: 0;
+      top: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      .close-menu {
+        width: 20px;
+        margin: 2rem 01rem 0 auto;
+        display: flex;
+      }
+      .first-nav {
+        margin-top: 3rem;
+      }
+      .nav-item {
+        color: black;
+        padding: 2rem;
+      }
     }
   }
 }

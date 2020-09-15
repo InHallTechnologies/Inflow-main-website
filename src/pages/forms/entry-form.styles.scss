@@ -3,4 +3,21 @@
   background-color: #333366;
   color: white;
   text-align: center;
+
+  .title {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .input {
+      padding: 0.5rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+  }
 }
