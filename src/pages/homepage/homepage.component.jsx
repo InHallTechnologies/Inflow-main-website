@@ -5,6 +5,8 @@ import Services from "../../components/services/services.component";
 import OurCustomers from "../../components/our-customers/our-customers.components";
 import ContactUs from "../../components/contact-us/contact-us.components";
 import OurWork from "../../components/our-work-container/our-work.component";
+import Reviews from "../../components/reviews/reviews.components";
+import TrustedBy from "../../components/trusted-by/trusted-by.components";
 
 class HomePage extends React.Component {
   constructor() {
@@ -41,7 +43,11 @@ class HomePage extends React.Component {
           contactUs={this.state.contactUs}
         />
         <OurWork />
+
+        {/* <Reviews /> */}
+
         {/* <OurCustomers reference={this.state.customers} /> */}
+        <TrustedBy />
         <ContactUs reference={this.state.contactUs} />
       </div>
     );
