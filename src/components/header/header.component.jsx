@@ -75,8 +75,8 @@ class Header extends React.Component {
             <p className="guranteed title">Guarenteed! </p>
           </div>
           <p className="header-content-text">
-            Inflow provides smart and efficient logistics solutions for all your
-            need.
+            Inflow provides smart and efficient logistics and packing solutions
+            for all your need.
           </p>
           <div className="header-button-container">
             <button

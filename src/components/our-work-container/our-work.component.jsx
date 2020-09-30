@@ -7,13 +7,12 @@ class OurWork extends React.Component {
     this.state = {
       imageList: [
         "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/1.jpeg?alt=media&token=503d3981-1e6a-43c8-bcfb-ec7ca7ac5045",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/2.jpeg?alt=media&token=1df4ab69-45c4-4393-9e2c-bbc50f2e1d96",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/3.jpeg?alt=media&token=a2984cf9-a480-41c4-b75b-c82958fcf2e1",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/4.jpeg?alt=media&token=ab0df2e0-c643-4b7a-b7f2-de840b9eeebe",
         "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/5.jpeg?alt=media&token=49712e15-8ec1-4171-afb1-47459457e998",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/6.jpeg?alt=media&token=aa44f477-082c-42c1-83cc-5682240e22b0",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/7.jpeg?alt=media&token=dece40c6-ec09-4ac8-ac27-07dd21a298a7",
-        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/8.jpeg?alt=media&token=1f9b6152-2fe3-4f35-b4fd-5946383a3dbe",
+        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/new1.jpg?alt=media&token=1ea1a053-7b95-47f9-9cdf-f40c3f51aed8",
+        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/new2.jpg?alt=media&token=3c045c09-6e4f-4f99-9d09-9ab292874c50",
+        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/new3.jpg?alt=media&token=cae022f4-d3f5-4f0f-a3cf-b76e08e93f29",
+        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/new4.jpg?alt=media&token=a9de39b8-aaa5-47d7-a9ab-0fd58787417a",
+        "https://firebasestorage.googleapis.com/v0/b/inflow-logistiks.appspot.com/o/new5.jpg?alt=media&token=93eeed26-4abc-454e-a35a-c487a3166425",
       ],
     };
 

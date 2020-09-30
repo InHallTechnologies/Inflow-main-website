@@ -14,8 +14,19 @@ const Services = (props) => {
       type: "For Packing",
       image: packing,
       key: 0,
-      message:
-        "We provide door step packaging service solution to both individual and company with industry at par material at a genuine and affordable rate. All over Banglore Live video call available, while maintaining all WHO precautions and safety measures. Please contact for more details and service.",
+      message: (
+        <p>
+          We provide door step packaging service solution to both individual and
+          company with industry at par material at a genuine and affordable
+          rate.
+          <br />
+          <b>All over Bangalore</b>
+          <br />
+          <b>Live video call available</b>
+          <br /> While maintaining all WHO precautions and safety measures.
+          Please contact for more details and service
+        </p>
+      ),
     },
     {
       type: "For Business",
